@@ -1,9 +1,22 @@
-## Hi there 👋
-<div align=center>
-  <a href="https://git.io/typing-svg"><img src="http://readme-typing-svg.herokuapp.com?font=Fira+Code&duration=4000&pause=1000&color=FFFFFF&center=true&width=520&lines=Hey+there!;I'm+a+Software+Developer" alt="Typing SVG" /></a>
-</div>
-
+## Howdy 👋, I'm Bartek
+<a href='https://www.linkedin.com/in/bartekus/'><img align='left' alt="linkedin" src="https://raw.githubusercontent.com/bartekus/bartekus/main/assets/linkedin.svg" height='18px'/></a>
+<a href='https://twitter.com/bartekus/'><img align='left' alt="twitter" src="https://raw.githubusercontent.com/bartekus/bartekus/main/assets/twitter.svg" height='18px'/></a>
 <br />
+
+Systems Architect, Platform Engineer, Software Developer, Consultant, Hacker and Open Source Enthusiast from Edmonton (Canada).
+
+```bash
+class About extends Me { 
+  const myTools = {  
+    "ProgramingLanguages" : { "JavaScript", "TypeScript", "Python", "Rust", "Go", "C" },
+    "OtherLanguages" : { "HTML", "CSS", "Bash", "JSON", "Markdown" },
+    "Database" : { "Postgres", "Sqlite" },
+    "Editors" : { "Webstorm", "RustRover", "GoLand", "Vscode" },
+    "Platforms" : { "MacOS", "GNU/Linux", "Unix", "Windows" },
+    "OtherTools" : { "Git", "Docker", "Cursor", "DevTools" }
+  };
+}
+```
 
 <div align=center>
   <a href="https://github.com/Bartekus/">
@@ -14,58 +27,12 @@
 <div align="center" >
   <a  href="https://github.com/Bartekus">
 
-  <img src="https://raw.githubusercontent.com/Bartekus/profile-summary-cards/master/profile-summary-card-output/nord_dark/3-stats.svg" width="32.5%">
-  <img src="https://raw.githubusercontent.com/Bartekus/profile-summary-cards/master/profile-summary-card-output/nord_dark/1-repos-per-language.svg" width="32.5%">
-  <img src="https://raw.githubusercontent.com/Bartekus/profile-summary-cards/master/profile-summary-card-output/nord_dark/2-most-commit-language.svg" width="32.5%">
+  <img src="https://raw.githubusercontent.com/Bartekus/bartekus/main/assets/github_dark/3-stats.svg" width="32.5%">
+  <img src="https://raw.githubusercontent.com/Bartekus/bartekus/main/assets/github_dark/1-repos-per-language.svg" width="32.5%">
+  <img src="https://raw.githubusercontent.com/Bartekus/bartekus/main/assets/github_dark/2-most-commit-language.svg" width="32.5%">
 
   </a>
 </div>
 
-<hr>
-
-<br> 
-
-<div width="100%" align="center">
-  <a align="center" href="https://github.com/Bartekus/weather-app" title="Weather App">
-    <img align="center" height="115" src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/pin/?username=Bartekus&repo=weather-app&theme=dark&icon_color=FFFFFF&border_color=FFFFFF&bg_color=FFFFFF00&border_radius=10">
-  </a>
-  &nbsp;&nbsp;&nbsp;
-  <a align="center" href="https://github.com/Bartekus/pomodoro-timer" title="Pomodoro Timer">
-    <img align="center" height="115" src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/pin/?username=Bartekus&repo=pomodoro-timer&theme=dark&icon_color=FFFFFF&border_color=FFFFFF&bg_color=FFFFFF00&border_radius=10">
-  </a>
-</div>
-
-<br/>
-
-<div width="100%" align="center">
-  <a align="center" href="https://github.com/Bartekus/cycle-x" title="Cycle-X">
-    <img align="center" height="115" src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/pin/?username=Bartekus&repo=cycle-x&theme=dark&icon_color=FFFFFF&border_color=FFFFFF&bg_color=FFFFFF00&border_radius=10">
-  </a>
-  &nbsp;&nbsp;&nbsp;
-  <a align="center" href="https://github.com/Bartekus/health-nexus" title="Health Nexus">
-    <img align="center" height="115" src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/pin/?username=Bartekus&repo=health-nexus&theme=dark&icon_color=FFFFFF&border_color=FFFFFF&bg_color=FFFFFF00&border_radius=10">
-  </a>
-</div>
-
-<br>
-
-<h4 align="center">
-  <a href="https://github.com/Bartekus?tab=repositories" title="Show Repositories">🔎 Show More 🔍</a>
-</h4>
-
-
-
-<!--
-**bartekus/bartekus** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+### 🔨 Languages and Tools:
+<a href="" target="_blank"> <img align="left" src="https://raw.githubusercontent.com/bartekus/bartekus/main/assets/svgs/node.svg" alt="nodejs" height="42px"/> </a> 
