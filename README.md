@@ -12,7 +12,7 @@
 
 <br />
 
-I'm a **Systems Architect**, **Platform Engineer**, and lifelong hacker from Edmonton 🇨🇦.
+I'm a **Systems Architect**, **Platform Engineer**, & lifelong hacker from Edmonton🇨🇦. </br>
 I care about open-source, developer tools, AI orchestration, and doing things right.
 
 ---
