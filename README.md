@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://raw.githubusercontent.com/bartekus/bartekus/main/assets/banner-dark.svg" alt="Bartek Kus – Systems Architect & Principal Engineer" />
+</p>
+
 ## 👋 Howdy, I'm Bartek
 
 <a href="https://www.buymeacoffee.com/bartekus" target="_blank" rel="noreferrer">
@@ -12,31 +16,71 @@
 
 <br />
 
-I'm a **Systems Architect**, **Platform Engineer**, & lifelong hacker from Edmonton🇨🇦. </br>
-I care about open-source, developer tools, AI orchestration, and doing things right.
+I'm **Bartek Kus** — a Systems Architect, Platform Engineer, and lifelong hacker from Edmonton, Canada.  
+I build things that scale, survive, and make life easier for the next engineer who touches them.
+
+I love working at the intersection of:
+
+- **Distributed systems & platform engineering**  
+- **Digital identity** (OIDC, SSI, DID)  
+- **AI-accelerated developer workflows**  
+- **Open-source tooling & infrastructure automation**
+
+I believe in *pragmatism over purity*, *clarity over cleverness*, and finishing the last 10% as cleanly as the first.
 
 ---
 
-### 📊 GitHub Stats
+### 🧩 What I’m currently building
 
-<div align="center">
-  <a href="https://github.com/Bartekus/">
-    <img src="https://github-readme-stats.vercel.app/api?username=Bartekus&show_icons=true&icon_color=FFFFFF&theme=dark&bg_color=FFFFFF00&hide_title=true&hide_border=true&hide=prs&include_all_commits=true" />
-  </a>
-</div>
+- **Encore.ts + RSC integration** – a unified backend + server-components dev platform  
+- **Employment.You** – a verified job platform + digital wallet for employment credentials  
+- **Pension.You** – long-term personal pension tooling for individuals and small businesses  
+- **GlyphOS** – symbolic AI cognition, reasoning DSLs, and agent orchestration  
 
 ---
 
-### 🧰 My Toolbox
+### 🛠 Tech I reach for often
 
-```ts
-class About extends Me {
-  const myTools = {
-    ProgramingLanguages: ["JavaScript", "TypeScript", "Python", "Rust", "Go", "C"],
-    OtherLanguages: ["HTML", "CSS", "Bash", "JSON", "Markdown"],
-    Databases: ["Postgres", "SQLite"],
-    Editors: ["WebStorm", "RustRover", "GoLand", "VS Code"],
-    Platforms: ["macOS", "Linux", "Unix", "Windows"],
-    OtherTools: ["Git", "Docker", "Cursor", "DevTools"]
-  };
-}
+`TypeScript` • `Node.js` • `React` • `Rust` • `PostgreSQL` • `Kubernetes` •  
+`Docker Compose` • `Terraform` • `GraphQL` • `OpenTelemetry` •  
+`AI Agents` • `Cursor` • `GitHub Copilot`
+
+---
+
+### ✨ Things I care about
+
+- Developer experience that *actually* respects developers  
+- Systems that are observable, debuggable, and boring in the best way  
+- Identity infrastructure that treats users with dignity  
+- AI that augments builders instead of replacing them  
+- Elegant architectures without unnecessary ceremony  
+
+---
+
+### 📊 GitHub at a glance
+
+<p align="left">
+  <img
+    src="https://github-readme-stats.vercel.app/api?username=bartekus&show_icons=true&hide_title=true&hide_border=true&include_all_commits=true&count_private=true&theme=tokyonight"
+    alt="GitHub stats for bartekus"
+    height="150"
+  />
+  <img
+    src="https://github-readme-stats.vercel.app/api/top-langs/?username=bartekus&layout=compact&hide_border=true&theme=tokyonight&langs_count=6"
+    alt="Top languages for bartekus"
+    height="150"
+  />
+</p>
+
+---
+
+### 📫 Reach me
+
+➡️ **https://bartekus.com**  
+➡️ **LinkedIn:** /in/bartekus  
+➡️ **Twitter:** @bartekus  
+➡️ **Email:** bartekus@gmail.com  
+
+---
+
+> _“Build the thing. Understand the thing. Then refine the thing until it disappears into simplicity.”_
