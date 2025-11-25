@@ -72,6 +72,8 @@ I believe in *pragmatism over purity*, *clarity over cleverness*, and finishing 
   />
 </p>
 
+
+![Test Stats](https://github-readme-stats.vercel.app/api?username=bartekus)
 ---
 
 ### 📫 Reach me
