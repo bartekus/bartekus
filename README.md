@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/bartekus/bartekus/main/assets/banner-dark.svg" alt="Bartek Kus - Systems Architect & Principal Engineer" />
+  <img src="https://raw.githubusercontent.com/bartekus/bartekus/main/assets/banner-dark.jpg" alt="Bartek Kus - Systems Architect & Principal Engineer" />
 </p>
 
 ## 👋 Howdy, I'm Bartek
