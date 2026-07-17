@@ -26,21 +26,21 @@ My answer is **architecting intent**: the human authors the contract, agents do 
 
 ### 🔭 What I'm building
 
-Most of this lives under the **[stagecraft.ing](https://github.com/stagecraft-ing)** org. Two flagships:
+Most of this lives under the **[statecraft.ing](https://github.com/statecraft-ing)** org. Two flagships:
 
-**[spec-spine](https://github.com/stagecraft-ing/spec-spine)**: a typed, hash-verifiable authority ledger over a markdown spec corpus. Every spec declares the files, sections, and symbols it owns; a PR-time coupling gate refuses code that drifts from its owning spec. Deterministic to the byte across five platforms; Rust; Apache-2.0. Install from [crates.io](https://crates.io/crates/spec-spine-cli) or [npm](https://www.npmjs.com/package/spec-spine). It governs itself: its own coupling gate runs against its own spec corpus in CI.
+**[spec-spine](https://github.com/statecrafting/spec-spine)**: a typed, hash-verifiable authority ledger over a markdown spec corpus. Every spec declares the files, sections, and symbols it owns; a PR-time coupling gate refuses code that drifts from its owning spec. Deterministic to the byte across five platforms; Rust; Apache-2.0. Install from [crates.io](https://crates.io/crates/spec-spine-cli) or [npm](https://www.npmjs.com/package/spec-spine). It governs itself: its own coupling gate runs against its own spec corpus in CI.
 
-**[open-agentic-platform](https://github.com/stagecraft-ing/open-agentic-platform)**: the same ideas at platform scale; a governed control plane for AI-native software delivery. 222 frozen, hash-verifiable specs compile to a deterministic registry; every agent action reconciles to the spec that authorised it; every pipeline run emits a self-authenticating governance certificate an auditor can verify independently; the OWASP ASI 2026 control-to-spec mapping is one CLI invocation. AGPL-3.0. Built by one person directing a fleet of governed agents, which is rather the point.
+**[open-agentic-platform](https://github.com/statecrafting/open-agentic-platform)**: the same ideas at platform scale; a governed control plane for AI-native software delivery. 222 frozen, hash-verifiable specs compile to a deterministic registry; every agent action reconciles to the spec that authorised it; every pipeline run emits a self-authenticating governance certificate an auditor can verify independently; the OWASP ASI 2026 control-to-spec mapping is one CLI invocation. AGPL-3.0. Built by one person directing a fleet of governed agents, which is rather the point.
 
 And the rest of the stack that turns those two into a working delivery system:
 
 | Project | What it is |
 |---|---|
-| **[factory-encore](https://github.com/stagecraft-ing/factory-encore)** | Technology-agnostic software factory: business documents become a frozen, technology-free Build Specification, and an adapter turns that into a running app. Apache-2.0. |
-| **[template-encore](https://github.com/stagecraft-ing/template-encore)** | The runnable Encore.ts + Vue 3 / PrimeVue reference baseline the factory composes from (public + staff SPAs, BFF gateway, OIDC auth). Apache-2.0. |
-| **[tenant-emit](https://github.com/stagecraft-ing/tenant-emit)** | Emit-only CLI a produced app pins to build a signed `governance-certificate.json` from a finished run directory. Apache-2.0. |
-| **[tenant-tail](https://github.com/stagecraft-ing/tenant-tail)** | Verify-only counterpart: re-checks the factory's run-side paperwork with zero trust in the producer. Offline, identity-free, read-only. Apache-2.0. |
-| **[oap-bootstrap](https://github.com/stagecraft-ing/oap-bootstrap)** | One resumable CLI that forks the platform into a new GitHub org and brings its Hetzner K3s estate online. Apache-2.0. |
+| **[factory-encore](https://github.com/statecrafting/factory-encore)** | Technology-agnostic software factory: business documents become a frozen, technology-free Build Specification, and an adapter turns that into a running app. Apache-2.0. |
+| **[template-encore](https://github.com/statecrafting/template-encore)** | The runnable Encore.ts + Vue 3 / PrimeVue reference baseline the factory composes from (public + staff SPAs, BFF gateway, OIDC auth). Apache-2.0. |
+| **[tenant-emit](https://github.com/statecrafting/tenant-emit)** | Emit-only CLI a produced app pins to build a signed `governance-certificate.json` from a finished run directory. Apache-2.0. |
+| **[tenant-tail](https://github.com/statecrafting/tenant-tail)** | Verify-only counterpart: re-checks the factory's run-side paperwork with zero trust in the producer. Offline, identity-free, read-only. Apache-2.0. |
+| **[oap-bootstrap](https://github.com/statecrafting/oap-bootstrap)** | One resumable CLI that forks the platform into a new GitHub org and brings its Hetzner K3s estate online. Apache-2.0. |
 
 ### 🤝 Open source I contribute to
 
