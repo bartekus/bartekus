@@ -26,35 +26,34 @@ My answer is **architecting intent**: the human authors the contract, agents do 
 
 ### 🔭 What I'm building
 
-Most of this lives under the **[statecrafting](https://github.com/statecrafting)** org; the front door is **[statecraft.ing](https://statecraft.ing)**. Two flagships:
+Everything lives under the **[statecrafting](https://github.com/statecrafting)** org; the public record is **[statecraft.ing](https://statecraft.ing)**, a static catalog of every specification in the family, pinned to immutable source revisions. The family is small tools with explicit boundaries, all Rust, all Apache-2.0. Each repository owns its own specs, and a library capability, a release and a deployed service are reported as separate claims.
 
-**[spec-spine](https://github.com/statecrafting/spec-spine)**: a typed, hash-verifiable authority ledger over a markdown spec corpus. Every spec declares the files, sections, and symbols it owns; a PR-time coupling gate refuses code that drifts from its owning spec. Deterministic to the byte across five platforms; Rust; Apache-2.0. Install from [crates.io](https://crates.io/crates/spec-spine-cli) or [npm](https://www.npmjs.com/package/spec-spine). It governs itself: its own coupling gate runs against its own spec corpus in CI.
+**[spec-spine](https://github.com/statecrafting/spec-spine)**: a typed, hash-verifiable authority ledger over a markdown spec corpus. Every spec declares the files, sections and symbols it owns; a PR-time coupling gate refuses code that drifts from its owning spec. Byte-identical output across platforms, one exit-code contract, `--json` everywhere. Released: v0.32.0 on [crates.io](https://crates.io/crates/spec-spine-cli), [npm](https://www.npmjs.com/package/spec-spine) and [PyPI](https://pypi.org/project/spec-spine/). It governs itself: its own coupling gate runs against its own spec corpus in CI.
 
-**[statecraft](https://github.com/statecrafting/statecraft)**: the same ideas at platform scale; the governed agentic delivery control plane. Tenants, a factory that stamps applications from a versioned template contract, a fleet plane that operates them on Hetzner k3s, and a governance UI over it all; every substantive change is bound to the spec that authorised it, and a PR-time coupling gate keeps that binding honest. AGPL-3.0. It is itself the first production EnRaHiTu app, so the platform is governed by the same machinery it offers. Built by one person directing a fleet of governed agents, which is rather the point.
+**[statecraft-cli](https://github.com/statecrafting/statecraft-cli)**: a local environment for governed agent work. Register a repository, prepare an isolated workspace, supervise an agent through one unit of work, judge the result independently, keep a reviewable account. One machine, one repo, no account. Specified, implemented and tested; publication is deliberately deferred, so it runs from a checkout.
 
-And the rest of the stack that turns those two into a working delivery system:
-
-| Project | What it is |
-|---|---|
-| **[enrahitu](https://github.com/statecrafting/enrahitu)** | EnRaHiTu (Encore.ts + rauthy + hiqlite + Turso/libSQL): a self-contained, single-container application core with zero managed-infrastructure dependencies; the template chassis the Statecraft factory stamps. Apache-2.0. |
-| **[statecraft-cli](https://github.com/statecrafting/statecraft-cli)** | One binary, two faces: Statecraft's governance verbs as a CLI for humans and an MCP server for agents. Apache-2.0. |
-| **[tenant-emit](https://github.com/statecrafting/tenant-emit)** | Emit-only CLI a stamped app pins to build a signed `governance-certificate.json` from a finished run directory. Apache-2.0. |
-| **[tenant-tail](https://github.com/statecrafting/tenant-tail)** | Verify-only counterpart: re-checks the factory's run-side paperwork with zero trust in the producer. Offline, identity-free, read-only. Apache-2.0. |
-| **[action-gate](https://github.com/statecrafting/action-gate) · [attest-ledger](https://github.com/statecrafting/attest-ledger) · [trust-window](https://github.com/statecrafting/trust-window) · [canonical-keysort-json](https://github.com/statecrafting/canonical-keysort-json)** | The extracted primitives: a deterministic decision gate, a tamper-evident signed ledger, a rolling-window trust scorer, and canonical JSON hashing. Apache-2.0. |
+| Project | What it is | State |
+|---|---|---|
+| **[rahi](https://github.com/statecrafting/rahi)** | The Rust chassis for governed cells: co-deployed [rauthy](https://github.com/sebadob/rauthy) identity, in-process [hiqlite](https://github.com/sebadob/hiqlite) Raft state, a hash-chained decision ledger, a deny-by-default capability kernel, an axum edge, single-container packaging with backup and restore. Apps compose it; they never fork it. | 0.7.1 release candidate on crates.io; supported topology N=1 |
+| **[aicortex](https://github.com/statecrafting/aicortex)** | Persistent, governed memory for AI clients over MCP, built as a rahi cell. Recalled content is always data; only a human-recorded promotion makes a memory instruction grade. | Specified; being built one spec per pull request |
+| **[rustev](https://github.com/statecrafting/rustev)** | An embeddable engine for making, evaluating and recording decisions over partially trusted information: bounded plans, explicit abstention, an evidence record per decision. Proposals, never grants. | v0.5.0 on crates.io |
+| **[wire-witness](https://github.com/statecrafting/wire-witness)** | Captures provider wire exchanges and produces attributed observations with custody facts. Testimony that never grants authority. | v0.1.0 tagged |
+| **[action-gate](https://github.com/statecrafting/action-gate) · [attest-ledger](https://github.com/statecrafting/attest-ledger) · [canonical-keysort-json](https://github.com/statecrafting/canonical-keysort-json)** | The primitives: a deterministic Allow/Deny/Degrade gate over a check registry, a tamper-evident Ed25519-signed ledger with an independent verifier, and canonical JSON bytes at the hashing boundary. | 0.3.0 · 0.2.0 · 0.1.1 on crates.io |
 
 ### 🤝 Open source I contribute to
 
-- **[rauthy](https://github.com/sebadob/rauthy)** ([@sebadob](https://github.com/sebadob)): a Rust OpenID Connect / OAuth2 / PAM identity provider with passkey-first security; the OIDC backbone my platform issues tokens through.
-- **[hiqlite](https://github.com/sebadob/hiqlite)** ([@sebadob](https://github.com/sebadob)): an embeddable SQLite that forms a Raft cluster for high availability and strong consistency; the embedded store at the heart of every EnRaHiTu app.
+- **[rauthy](https://github.com/sebadob/rauthy)** ([@sebadob](https://github.com/sebadob)): a Rust OpenID Connect / OAuth2 / PAM identity provider with passkey-first security; the identity provider every rahi cell co-deploys.
+- **[hiqlite](https://github.com/sebadob/hiqlite)** ([@sebadob](https://github.com/sebadob)): an embeddable SQLite that forms a Raft cluster for high availability and strong consistency; the replicated store inside every rahi cell.
 
 ---
 
 ### 🧭 What I think
 
 - **Architecting intent over vibe coding.** No human reviews every line an agent produces; pretending otherwise just moves the bottleneck back to the human. Make intent the requirement, the requirement a spec, and the spec law.
-- **Agentic output is hostile by default.** Agents earn passage by surviving gates, not by appealing to trust.
-- **Humans gate contracts, not diffs.** Specs, approvals, and irreversible boundaries are human territory; everything between them is enforced by machinery.
-- **Typed contracts beat convention.** It's why my backends are [Encore.ts](https://encore.dev), not Express: declarative, type-safe APIs that generate their own infrastructure, instead of middleware chains held together by discipline.
+- **Agentic output is hostile by default.** Agents earn passage by surviving gates, not by appealing to trust. A PR branch is a stranger's bytes until it is checked.
+- **Humans gate contracts, not diffs.** Specs, approvals and irreversible boundaries are human territory; everything between them is enforced by machinery.
+- **A claim carries its grade.** Specified, implemented, tested, released and deployed are different statements. A tool that cannot tell you which one it is making is not finished.
+- **Small tools, explicit boundaries.** A gate does not log, a ledger does not decide, a witness does not authorize, a memory does not instruct. Each refuses the neighbouring job on purpose.
 
 How I got here is one problem at three scales: a decade of digital identity (OIDC, SSI, DID) asking "can this person be trusted", platform engineering asking "can this system be trusted", and now governed agent delivery asking "can machine-generated change be trusted".
 
@@ -62,8 +61,8 @@ How I got here is one problem at three scales: a decade of digital identity (OID
 
 ### 🛠 Tech I reach for often
 
-`Rust` • `TypeScript` • `Encore.ts` • `React` • `Tauri` • `PostgreSQL` •
-`Kubernetes` • `Helm` • `Terraform` • `OpenTelemetry` • `Claude Code` • `MCP`
+`Rust` • `TypeScript` • `React` • `SQLite / hiqlite` • `PostgreSQL` •
+`Kubernetes` • `Helm` • `Flux` • `Terraform` • `OpenTelemetry` • `Claude Code` • `Codex` • `MCP`
 
 ---
 
@@ -89,7 +88,7 @@ How I got here is one problem at three scales: a decade of digital identity (OID
 ➡️ **https://bartekus.com**
 ➡️ **LinkedIn:** /in/bartekus
 ➡️ **Twitter:** @bartekus
-➡️ **Email:** bartekus@gmail.com
+➡️ **Email:** bart@statecraft.ing
 
 ---
 
